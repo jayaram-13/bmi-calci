@@ -37,3 +37,4 @@ jobs:
             git pull
             npm install 
             npm run build
+            npm adit fix --force
