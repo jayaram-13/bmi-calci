@@ -33,7 +33,7 @@ jobs:
           script: |
             cd /var/www/html
             git clone https://jayaram-13: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@github.com/jayaram-13/calculator
-            cd bmi-calculator
+            cd calculator
             git pull
             npm install 
             npm run build
