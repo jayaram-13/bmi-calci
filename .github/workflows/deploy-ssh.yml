@@ -25,17 +25,14 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v2
       - name: copy files via ssh
-        uses: appleboy/ssh-action@master
+        uses: applebo/ssh-action@master
         with:
           host: ${{secrets.SSH_HOST}}
           username: ${{secrets.SSH_USERNAME}}
           key: ${{secrets.SSH_KEY}}
           script: |
             cd /var/www/html
-            if [ -d "bmi-calculator" ]; then
-              rm -rf bmi-calculator
-            fi
-            git clone https://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@github.com/jayaram-13/bmi-calculator
+            git clone https://jayaram-13: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@github.com/jayaram-13/bmi-calculator
             cd bmi-calculator
             git pull
             npm install 
