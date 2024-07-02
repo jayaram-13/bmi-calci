@@ -32,8 +32,8 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           script: |
             cd /var/www/html
-            git clone https://jayaram-13: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@github.com/jayaram-13/bmi-calculator
-            cd bmi-calculator
+            git clone https://jayaram-13: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@github.com/jayaram-13/bmi-calculator5
+            cd bmi-calculator5
             git pull
             npm install 
             npm run build
