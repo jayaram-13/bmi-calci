@@ -25,7 +25,7 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v2
       - name: copy files via ssh
-        uses: applebo/ssh-action@master
+        uses: appleboy/ssh-action@master
         with:
           host: ${{secrets.SSH_HOST}}
           username: ${{secrets.SSH_USERNAME}}
