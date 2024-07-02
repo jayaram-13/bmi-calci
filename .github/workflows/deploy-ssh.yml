@@ -36,7 +36,7 @@ jobs:
               rm -rf bmi-calculator
             fi
             git clone https://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@github.com/jayaram-13/bmi-calculator
-            cd bmi_calculator
+            cd bmi-calculator
             git pull
             npm install 
             npm run build
